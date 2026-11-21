@@ -1,0 +1,1569 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黑椒盖饭_家常复刻指南|一勺黑椒香,一碗饭正好</title>
+<meta name="description" content="黑椒盖饭官方网站，专注家常黑椒盖饭的完整复刻：从黑椒汁配比到牛肉腌制、从锅气火候到摆盘，官方发布原创高清教程与创作者社区内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b1d14'/%3E%3Ccircle cx='32' cy='34' r='17' fill='%23f5efe3'/%3E%3Cpath d='M18 34c0-8 6-14 14-14s14 6 14 14' fill='none' stroke='%23e08a2c' stroke-width='3'/%3E%3Ccircle cx='26' cy='33' r='2.4' fill='%232b1d14'/%3E%3Ccircle cx='38' cy='36' r='2.4' fill='%232b1d14'/%3E%3Ccircle cx='32' cy='42' r='1.8' fill='%232b1d14'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --hjbf-ink:#2b1d14;
+    --hjbf-ink-soft:#5a4433;
+    --hjbf-amber:#e08a2c;
+    --hjbf-amber-deep:#c06a12;
+    --hjbf-cream:#fdf7ec;
+    --hjbf-cream-2:#f6ecd9;
+    --hjbf-line:#e6d7bf;
+    --hjbf-white:#fffdf8;
+    --hjbf-shadow:0 10px 28px rgba(43,29,20,.10);
+    --hjbf-radius:16px;
+    --hjbf-sticky:118px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--hjbf-cream);
+    color:var(--hjbf-ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  .hjbf-wrap{width:min(1180px,92%);margin:0 auto;}
+  .hjbf-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+  /* ---------- 吸顶容器：公告条 + 页头 ---------- */
+  .hjbf-stickybar{
+    position:sticky;top:0;z-index:80;
+    background:rgba(253,247,236,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--hjbf-line);
+  }
+  .hjbf-notice{
+    background:linear-gradient(90deg,#2b1d14,#4a3222 60%,#6b4425);
+    color:#f7e7cd;
+    font-size:13px;
+    letter-spacing:.2px;
+  }
+  .hjbf-notice .hjbf-wrap{
+    display:flex;align-items:center;gap:10px;
+    padding:8px 0;flex-wrap:wrap;
+  }
+  .hjbf-notice strong{color:#ffc27a;font-weight:700;}
+  .hjbf-notice-item{display:inline-flex;align-items:center;gap:6px;}
+  .hjbf-notice-dot{width:6px;height:6px;border-radius:50%;background:#ffc27a;display:inline-block;flex:none;}
+  .hjbf-notice-more{margin-left:auto;color:#ffdcaa;border-bottom:1px dashed rgba(255,220,170,.5);}
+  .hjbf-notice-more:hover{color:#fff;}
+
+  .hjbf-header{padding:12px 0;}
+  .hjbf-header .hjbf-wrap{display:flex;align-items:center;gap:22px;}
+  .hjbf-logo{display:flex;align-items:center;gap:10px;flex:none;}
+  .hjbf-logo-mark{
+    width:42px;height:42px;border-radius:12px;flex:none;
+    background:radial-gradient(circle at 32% 28%,#f2a849,#c06a12 70%);
+    display:grid;place-items:center;
+    box-shadow:inset 0 -3px 0 rgba(0,0,0,.18);
+  }
+  .hjbf-logo-mark svg{width:24px;height:24px;}
+  .hjbf-logo-text{display:flex;flex-direction:column;line-height:1.2;}
+  .hjbf-logo-text b{font-size:19px;letter-spacing:1px;}
+  .hjbf-logo-text span{font-size:11px;color:var(--hjbf-ink-soft);letter-spacing:2px;}
+
+  .hjbf-nav{display:flex;gap:4px;flex-wrap:wrap;}
+  .hjbf-nav a{
+    font-size:14.5px;padding:7px 12px;border-radius:9px;color:var(--hjbf-ink-soft);
+    transition:.2s;white-space:nowrap;
+  }
+  .hjbf-nav a:hover{background:var(--hjbf-cream-2);color:var(--hjbf-amber-deep);}
+
+  .hjbf-search{margin-left:auto;display:flex;align-items:center;gap:8px;position:relative;}
+  .hjbf-search input{
+    width:210px;padding:9px 14px;border-radius:999px;border:1px solid var(--hjbf-line);
+    background:var(--hjbf-white);font-size:13.5px;color:var(--hjbf-ink);outline:none;transition:.2s;
+  }
+  .hjbf-search input:focus{border-color:var(--hjbf-amber);box-shadow:0 0 0 3px rgba(224,138,44,.16);width:240px;}
+  .hjbf-search-btn{
+    padding:9px 16px;border-radius:999px;border:none;background:var(--hjbf-ink);color:#ffe6c2;
+    font-size:13.5px;transition:.2s;
+  }
+  .hjbf-search-btn:hover{background:var(--hjbf-amber-deep);}
+  .hjbf-search-tip{
+    position:absolute;top:46px;right:0;width:260px;background:var(--hjbf-white);
+    border:1px solid var(--hjbf-line);border-radius:12px;box-shadow:var(--hjbf-shadow);
+    padding:10px 12px;font-size:13px;color:var(--hjbf-ink-soft);display:none;z-index:90;
+  }
+  .hjbf-search-tip.hjbf-show{display:block;}
+  .hjbf-search-tip b{color:var(--hjbf-amber-deep);}
+
+  .hjbf-burger{display:none;margin-left:auto;background:none;border:1px solid var(--hjbf-line);border-radius:10px;padding:8px 11px;font-size:16px;color:var(--hjbf-ink);}
+
+  /* ---------- 首屏 ---------- */
+  .hjbf-hero{padding:38px 0 26px;position:relative;overflow:hidden;}
+  .hjbf-hero::before{
+    content:"";position:absolute;right:-140px;top:-120px;width:460px;height:460px;border-radius:50%;
+    background:radial-gradient(circle,rgba(224,138,44,.20),transparent 68%);
+  }
+  .hjbf-hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center;position:relative;}
+  .hjbf-badge{
+    display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+    color:var(--hjbf-amber-deep);background:rgba(224,138,44,.12);
+    border:1px solid rgba(224,138,44,.34);border-radius:999px;padding:5px 14px;
+  }
+  h1.hjbf-h1{
+    font-size:clamp(38px,5.4vw,62px);line-height:1.1;margin:18px 0 14px;letter-spacing:2px;
+    font-weight:800;
+  }
+  h1.hjbf-h1 em{
+    font-style:normal;color:var(--hjbf-amber-deep);
+    background:linear-gradient(180deg,transparent 62%,rgba(224,138,44,.32) 62%);
+  }
+  .hjbf-hero-slogan{font-size:18px;color:var(--hjbf-ink-soft);margin:0 0 18px;font-weight:600;}
+  .hjbf-hero-intro{font-size:15px;color:var(--hjbf-ink-soft);margin:0 0 22px;}
+  .hjbf-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+  .hjbf-btn{
+    padding:12px 24px;border-radius:12px;font-size:14.5px;border:1px solid transparent;transition:.2s;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .hjbf-btn-main{background:var(--hjbf-ink);color:#ffe9c9;box-shadow:0 8px 18px rgba(43,29,20,.22);}
+  .hjbf-btn-main:hover{background:var(--hjbf-amber-deep);transform:translateY(-2px);}
+  .hjbf-btn-ghost{background:transparent;border-color:var(--hjbf-line);color:var(--hjbf-ink);}
+  .hjbf-btn-ghost:hover{border-color:var(--hjbf-amber);color:var(--hjbf-amber-deep);}
+
+  .hjbf-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .hjbf-stat{background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:14px;padding:12px 14px;}
+  .hjbf-stat b{display:block;font-size:22px;color:var(--hjbf-amber-deep);letter-spacing:.5px;}
+  .hjbf-stat span{font-size:12.5px;color:var(--hjbf-ink-soft);}
+
+  .hjbf-hero-visual{position:relative;}
+  .hjbf-hero-frame{
+    border-radius:22px;overflow:hidden;box-shadow:var(--hjbf-shadow);border:1px solid var(--hjbf-line);
+    position:relative;background:#2b1d14;
+  }
+  .hjbf-hero-frame img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .hjbf-hero-float{
+    position:absolute;left:-18px;bottom:22px;background:var(--hjbf-white);
+    border:1px solid var(--hjbf-line);border-radius:14px;padding:10px 16px;box-shadow:var(--hjbf-shadow);
+    font-size:13px;color:var(--hjbf-ink-soft);
+  }
+  .hjbf-hero-float b{color:var(--hjbf-amber-deep);font-size:15px;}
+  .hjbf-hero-tag{
+    position:absolute;right:16px;top:16px;background:rgba(43,29,20,.78);color:#ffdcaa;
+    font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:1px;
+  }
+
+  /* ---------- 通用区块 ---------- */
+  .hjbf-section{padding:52px 0;}
+  .hjbf-section-alt{background:linear-gradient(180deg,#fbf3e4,#fdf7ec);}
+  .hjbf-sec-head{margin-bottom:28px;}
+  .hjbf-sec-kicker{
+    font-size:12.5px;letter-spacing:3px;color:var(--hjbf-amber-deep);font-weight:700;
+  }
+  .hjbf-sec-head h2{
+    font-size:clamp(24px,3vw,32px);margin:6px 0 8px;line-height:1.3;letter-spacing:1px;
+  }
+  .hjbf-sec-head p{margin:0;color:var(--hjbf-ink-soft);font-size:14.5px;max-width:760px;}
+
+  /* ---------- 焦点内容 ---------- */
+  .hjbf-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;}
+  .hjbf-focus-main{
+    border-radius:var(--hjbf-radius);overflow:hidden;background:#2b1d14;position:relative;
+    box-shadow:var(--hjbf-shadow);display:flex;flex-direction:column;
+  }
+  .hjbf-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .hjbf-focus-main-body{padding:20px 22px 22px;color:#f7ecd9;}
+  .hjbf-focus-main-body h3{font-size:21px;margin:0 0 8px;color:#fff;}
+  .hjbf-focus-main-body p{font-size:13.8px;margin:0 0 14px;color:#e4d3ba;}
+  .hjbf-meta-row{display:flex;gap:14px;font-size:12.5px;color:#c9ae8c;flex-wrap:wrap;}
+  .hjbf-focus-side{display:grid;gap:14px;align-content:start;}
+  .hjbf-mini{
+    display:grid;grid-template-columns:124px 1fr;gap:12px;background:var(--hjbf-white);
+    border:1px solid var(--hjbf-line);border-radius:14px;overflow:hidden;transition:.2s;
+  }
+  .hjbf-mini:hover{transform:translateY(-3px);box-shadow:var(--hjbf-shadow);border-color:var(--hjbf-amber);}
+  .hjbf-mini img{width:124px;height:100%;object-fit:cover;aspect-ratio:4/3;}
+  .hjbf-mini-body{padding:10px 12px 10px 0;}
+  .hjbf-mini-body h4{margin:0 0 6px;font-size:14.5px;line-height:1.45;}
+  .hjbf-mini-body p{margin:0;font-size:12.5px;color:var(--hjbf-ink-soft);}
+  .hjbf-mini-body .hjbf-tagline{margin-top:8px;font-size:12px;color:var(--hjbf-amber-deep);}
+
+  /* ---------- 视频流 ---------- */
+  .hjbf-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+  .hjbf-chip{
+    font-size:13px;padding:7px 15px;border-radius:999px;border:1px solid var(--hjbf-line);
+    background:var(--hjbf-white);color:var(--hjbf-ink-soft);transition:.2s;
+  }
+  .hjbf-chip:hover{border-color:var(--hjbf-amber);color:var(--hjbf-amber-deep);}
+  .hjbf-chip.hjbf-chip-on{background:var(--hjbf-ink);color:#ffe6c2;border-color:var(--hjbf-ink);}
+  .hjbf-videos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .hjbf-card{
+    background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:var(--hjbf-radius);
+    overflow:hidden;transition:.25s;display:flex;flex-direction:column;
+  }
+  .hjbf-card:hover{transform:translateY(-5px);box-shadow:var(--hjbf-shadow);border-color:rgba(224,138,44,.55);}
+  .hjbf-cover{position:relative;background:#2b1d14;}
+  .hjbf-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .hjbf-cover-tag{
+    position:absolute;left:10px;top:10px;background:rgba(43,29,20,.8);color:#ffdcaa;
+    font-size:11.5px;padding:3px 10px;border-radius:999px;letter-spacing:.5px;
+  }
+  .hjbf-cover-play{
+    position:absolute;right:10px;bottom:10px;width:34px;height:34px;border-radius:50%;
+    background:rgba(253,247,236,.92);display:grid;place-items:center;
+  }
+  .hjbf-cover-play svg{width:13px;height:13px;fill:var(--hjbf-ink);margin-left:2px;}
+  .hjbf-card-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1;}
+  .hjbf-card-body h3{font-size:15.5px;margin:0 0 7px;line-height:1.5;}
+  .hjbf-card-body p{margin:0 0 10px;font-size:13px;color:var(--hjbf-ink-soft);flex:1;}
+  .hjbf-author{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--hjbf-ink-soft);margin-bottom:10px;}
+  .hjbf-avatar{
+    width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none;
+    font-size:12px;color:#fff;font-weight:700;
+  }
+  .hjbf-card-foot{display:flex;align-items:center;gap:12px;border-top:1px dashed var(--hjbf-line);padding-top:10px;}
+  .hjbf-act{background:none;border:none;font-size:12.5px;color:var(--hjbf-ink-soft);display:inline-flex;align-items:center;gap:4px;padding:2px 4px;border-radius:6px;transition:.2s;}
+  .hjbf-act:hover{color:var(--hjbf-amber-deep);background:rgba(224,138,44,.1);}
+  .hjbf-act.hjbf-liked{color:var(--hjbf-amber-deep);font-weight:700;}
+  .hjbf-act.hjbf-saved svg{fill:var(--hjbf-amber-deep);stroke:var(--hjbf-amber-deep);}
+  .hjbf-act svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;}
+
+  /* ---------- 专题 ---------- */
+  .hjbf-topics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .hjbf-topic{
+    border-radius:var(--hjbf-radius);overflow:hidden;position:relative;min-height:236px;
+    display:flex;align-items:flex-end;color:#fff;box-shadow:var(--hjbf-shadow);
+  }
+  .hjbf-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .hjbf-topic-mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,29,20,.05),rgba(43,29,20,.86));}
+  .hjbf-topic-body{position:relative;padding:16px;}
+  .hjbf-topic-body h3{font-size:16px;margin:0 0 6px;color:#fff;}
+  .hjbf-topic-body p{font-size:12.5px;margin:0 0 8px;color:#e0cdb2;}
+  .hjbf-topic-state{
+    display:inline-block;font-size:11px;padding:2px 9px;border-radius:999px;
+    background:rgba(224,138,44,.9);color:#2b1d14;font-weight:700;
+  }
+
+  /* ---------- 创作者 ---------- */
+  .hjbf-authors{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .hjbf-author-card{
+    background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:var(--hjbf-radius);
+    padding:22px 18px;text-align:center;transition:.22s;
+  }
+  .hjbf-author-card:hover{transform:translateY(-4px);box-shadow:var(--hjbf-shadow);}
+  .hjbf-author-card .hjbf-avatar{width:60px;height:60px;font-size:22px;margin:0 auto 12px;}
+  .hjbf-author-card h3{font-size:16px;margin:0 0 4px;}
+  .hjbf-author-card .hjbf-field{font-size:12.5px;color:var(--hjbf-amber-deep);margin:0 0 10px;}
+  .hjbf-author-card p{font-size:12.8px;color:var(--hjbf-ink-soft);margin:0 0 12px;text-align:left;}
+  .hjbf-author-nums{display:flex;justify-content:center;gap:16px;font-size:12px;color:var(--hjbf-ink-soft);border-top:1px dashed var(--hjbf-line);padding-top:10px;}
+  .hjbf-author-nums b{color:var(--hjbf-ink);display:block;font-size:14px;}
+
+  /* ---------- 故事随笔 ---------- */
+  .hjbf-essays{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .hjbf-essay{
+    background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-left:4px solid var(--hjbf-amber);
+    border-radius:12px;padding:20px;
+  }
+  .hjbf-essay h3{font-size:16px;margin:0 0 10px;}
+  .hjbf-essay p{font-size:13.5px;color:var(--hjbf-ink-soft);margin:0 0 12px;}
+  .hjbf-essay span{font-size:12px;color:var(--hjbf-amber-deep);}
+
+  /* ---------- 解析长文 ---------- */
+  .hjbf-article{
+    background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:20px;
+    padding:clamp(22px,4vw,44px);box-shadow:var(--hjbf-shadow);
+  }
+  .hjbf-article h2{font-size:clamp(22px,2.8vw,29px);margin:0 0 6px;}
+  .hjbf-article h3{font-size:18px;margin:26px 0 10px;color:var(--hjbf-ink);position:relative;padding-left:14px;}
+  .hjbf-article h3::before{content:"";position:absolute;left:0;top:8px;width:5px;height:16px;border-radius:3px;background:var(--hjbf-amber);}
+  .hjbf-article p{font-size:14.8px;color:#4a3627;margin:0 0 14px;}
+  .hjbf-article ul{margin:0 0 16px;padding-left:20px;font-size:14.5px;color:#4a3627;}
+  .hjbf-article li{margin-bottom:7px;}
+  .hjbf-article .hjbf-note{
+    background:var(--hjbf-cream-2);border-radius:12px;padding:14px 18px;font-size:13.8px;
+    color:var(--hjbf-ink-soft);border-left:4px solid var(--hjbf-amber);
+  }
+
+  /* ---------- 评价 ---------- */
+  .hjbf-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .hjbf-review{
+    background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:14px;padding:18px;
+    transition:.2s;
+  }
+  .hjbf-review:hover{border-color:var(--hjbf-amber);transform:translateY(-3px);}
+  .hjbf-review-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .hjbf-review-head b{font-size:13.5px;}
+  .hjbf-review-head span{font-size:11.5px;color:var(--hjbf-ink-soft);display:block;}
+  .hjbf-review p{font-size:13.5px;color:var(--hjbf-ink-soft);margin:0;}
+  .hjbf-stars{color:#e08a2c;font-size:12.5px;letter-spacing:1px;margin-bottom:8px;}
+
+  /* ---------- 动态 & 合作 ---------- */
+  .hjbf-columns{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;}
+  .hjbf-news{background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:16px;padding:8px 20px;}
+  .hjbf-news-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px dashed var(--hjbf-line);}
+  .hjbf-news-item:last-child{border-bottom:none;}
+  .hjbf-news-date{
+    flex:none;font-size:12px;color:var(--hjbf-amber-deep);background:rgba(224,138,44,.12);
+    border-radius:8px;padding:5px 9px;height:fit-content;font-weight:700;letter-spacing:.5px;
+  }
+  .hjbf-news-item h4{margin:0 0 4px;font-size:14.5px;}
+  .hjbf-news-item p{margin:0;font-size:13px;color:var(--hjbf-ink-soft);}
+  .hjbf-partners{background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:16px;padding:20px;}
+  .hjbf-partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .hjbf-partner{
+    border:1px solid var(--hjbf-line);border-radius:10px;padding:14px 12px;text-align:center;
+    font-size:13px;color:var(--hjbf-ink-soft);transition:.2s;background:var(--hjbf-cream);
+  }
+  .hjbf-partner:hover{border-color:var(--hjbf-amber);color:var(--hjbf-amber-deep);background:var(--hjbf-white);}
+
+  /* ---------- FAQ ---------- */
+  .hjbf-faq{display:grid;gap:10px;}
+  .hjbf-faq details{
+    background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:12px;
+    padding:14px 18px;transition:.2s;
+  }
+  .hjbf-faq details[open]{border-color:var(--hjbf-amber);box-shadow:0 6px 18px rgba(224,138,44,.12);}
+  .hjbf-faq summary{
+    cursor:pointer;font-size:14.8px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+  }
+  .hjbf-faq summary::-webkit-details-marker{display:none;}
+  .hjbf-faq summary::after{content:"+";font-size:18px;color:var(--hjbf-amber-deep);transition:.2s;}
+  .hjbf-faq details[open] summary::after{content:"–";}
+  .hjbf-faq p{margin:10px 0 0;font-size:13.8px;color:var(--hjbf-ink-soft);}
+
+  /* ---------- 联系/投稿 ---------- */
+  .hjbf-contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .hjbf-contact-card{
+    background:linear-gradient(150deg,#2b1d14,#4b3320);color:#f5e6d0;border-radius:20px;
+    padding:clamp(22px,3.6vw,38px);position:relative;overflow:hidden;
+  }
+  .hjbf-contact-card::after{
+    content:"";position:absolute;right:-60px;bottom:-70px;width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(circle,rgba(224,138,44,.4),transparent 70%);
+  }
+  .hjbf-contact-card h2{color:#ffdcaa;margin:0 0 10px;font-size:24px;}
+  .hjbf-contact-card p{font-size:14px;color:#dbc7ac;margin:0 0 18px;}
+  .hjbf-contact-list{list-style:none;padding:0;margin:0 0 20px;font-size:14px;position:relative;}
+  .hjbf-contact-list li{margin-bottom:8px;}
+  .hjbf-contact-list b{color:#ffc27a;}
+  .hjbf-contact-actions{display:flex;gap:10px;flex-wrap:wrap;position:relative;}
+  .hjbf-btn-light{background:#ffdcaa;color:#2b1d14;font-weight:700;}
+  .hjbf-btn-light:hover{background:#fff;transform:translateY(-2px);}
+  .hjbf-form-card{background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:20px;padding:clamp(20px,3.4vw,32px);}
+  .hjbf-form-card h3{margin:0 0 8px;font-size:19px;}
+  .hjbf-form-card p{margin:0 0 16px;font-size:13.5px;color:var(--hjbf-ink-soft);}
+  .hjbf-field-row{margin-bottom:12px;}
+  .hjbf-field-row label{display:block;font-size:12.8px;margin-bottom:5px;color:var(--hjbf-ink-soft);}
+  .hjbf-field-row input,.hjbf-field-row textarea{
+    width:100%;padding:10px 13px;border-radius:10px;border:1px solid var(--hjbf-line);
+    background:var(--hjbf-cream);font-size:13.5px;font-family:inherit;color:var(--hjbf-ink);outline:none;
+  }
+  .hjbf-field-row input:focus,.hjbf-field-row textarea:focus{border-color:var(--hjbf-amber);box-shadow:0 0 0 3px rgba(224,138,44,.14);background:#fff;}
+  .hjbf-form-tip{font-size:12.5px;color:var(--hjbf-amber-deep);min-height:20px;margin-top:8px;}
+
+  /* ---------- 页脚 ---------- */
+  .hjbf-footer{background:#241811;color:#c8b39a;padding:44px 0 26px;margin-top:20px;}
+  .hjbf-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;}
+  .hjbf-footer h4{color:#f0dfc6;font-size:14.5px;margin:0 0 12px;letter-spacing:1px;}
+  .hjbf-footer p{font-size:13px;margin:0 0 8px;line-height:1.8;}
+  .hjbf-footer ul{list-style:none;padding:0;margin:0;font-size:13px;}
+  .hjbf-footer li{margin-bottom:8px;}
+  .hjbf-footer a:hover{color:#ffc27a;}
+  .hjbf-footer-bottom{
+    border-top:1px solid rgba(255,220,170,.14);margin-top:28px;padding-top:16px;
+    font-size:12.5px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;color:#9d8a72;
+  }
+
+  /* ---------- Toast & 弹窗 ---------- */
+  .hjbf-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);opacity:0;pointer-events:none;
+    background:#2b1d14;color:#ffe9c9;padding:11px 22px;border-radius:999px;font-size:13.5px;
+    z-index:200;transition:.28s;box-shadow:0 12px 30px rgba(0,0,0,.28);
+  }
+  .hjbf-toast.hjbf-show{opacity:1;transform:translate(-50%,0);}
+  .hjbf-modal{
+    position:fixed;inset:0;background:rgba(30,20,12,.6);display:none;place-items:center;z-index:180;padding:20px;
+  }
+  .hjbf-modal.hjbf-show{display:grid;}
+  .hjbf-modal-box{
+    background:var(--hjbf-white);border-radius:18px;max-width:520px;width:100%;padding:26px;
+    position:relative;max-height:86vh;overflow:auto;
+  }
+  .hjbf-modal-box h3{margin:0 0 10px;font-size:20px;}
+  .hjbf-modal-box p{font-size:13.8px;color:var(--hjbf-ink-soft);}
+  .hjbf-modal-close{
+    position:absolute;right:14px;top:12px;background:none;border:none;font-size:20px;color:var(--hjbf-ink-soft);
+  }
+  .hjbf-share-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0;}
+  .hjbf-share-item{
+    border:1px solid var(--hjbf-line);border-radius:10px;padding:12px 8px;text-align:center;
+    font-size:13px;background:var(--hjbf-cream);transition:.2s;
+  }
+  .hjbf-share-item:hover{border-color:var(--hjbf-amber);color:var(--hjbf-amber-deep);}
+
+  .hjbf-top-btn{
+    position:fixed;right:20px;bottom:22px;width:46px;height:46px;border-radius:50%;
+    background:var(--hjbf-ink);color:#ffdcaa;border:none;display:grid;place-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.24);opacity:0;pointer-events:none;transition:.28s;z-index:120;font-size:17px;
+  }
+  .hjbf-top-btn.hjbf-show{opacity:1;pointer-events:auto;}
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:1024px){
+    .hjbf-hero-grid{grid-template-columns:1fr;gap:26px;}
+    .hjbf-focus-grid{grid-template-columns:1fr;}
+    .hjbf-videos{grid-template-columns:repeat(2,1fr);}
+    .hjbf-topics{grid-template-columns:repeat(2,1fr);}
+    .hjbf-authors{grid-template-columns:repeat(2,1fr);}
+    .hjbf-essays{grid-template-columns:1fr;}
+    .hjbf-reviews{grid-template-columns:repeat(2,1fr);}
+    .hjbf-columns{grid-template-columns:1fr;}
+    .hjbf-contact-wrap{grid-template-columns:1fr;}
+    .hjbf-footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:760px){
+    .hjbf-header .hjbf-wrap{flex-wrap:wrap;gap:12px;}
+    .hjbf-burger{display:block;order:2;}
+    .hjbf-search{order:3;width:100%;margin-left:0;}
+    .hjbf-search input{width:100%;}
+    .hjbf-search input:focus{width:100%;}
+    .hjbf-search-btn{padding:9px 14px;}
+    .hjbf-nav{
+      order:4;width:100%;display:none;flex-direction:column;gap:2px;
+      background:var(--hjbf-white);border:1px solid var(--hjbf-line);border-radius:12px;padding:8px;margin-bottom:6px;
+    }
+    .hjbf-nav.hjbf-nav-open{display:flex;}
+    .hjbf-nav a{padding:9px 12px;}
+    .hjbf-stats{grid-template-columns:1fr 1fr;}
+    .hjbf-videos{grid-template-columns:1fr;}
+    .hjbf-topics{grid-template-columns:1fr;}
+    .hjbf-authors{grid-template-columns:1fr;}
+    .hjbf-reviews{grid-template-columns:1fr;}
+    .hjbf-footer-grid{grid-template-columns:1fr;}
+    .hjbf-hero-float{left:8px;}
+    .hjbf-notice .hjbf-wrap{font-size:12px;gap:6px;}
+    .hjbf-notice-more{margin-left:0;}
+    .hjbf-section{padding:38px 0;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;animation:none !important;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="hjbf-stickybar" id="hjbf-top">
+  <div class="hjbf-notice">
+    <div class="hjbf-wrap">
+      <span class="hjbf-notice-item"><i class="hjbf-notice-dot"></i><strong>官方发布</strong> · 「黑椒盖饭·完整版」系列第 12 期上线</span>
+      <span class="hjbf-notice-item"><i class="hjbf-notice-dot"></i>新增：黑椒汁三段式配比表 & 家庭灶火候对照卡</span>
+      <span class="hjbf-notice-item"><i class="hjbf-notice-dot"></i>秋季厨艺挑战赛报名中，11 月 30 日截止</span>
+      <a class="hjbf-notice-more" href="#hjbf-news">查看全部更新 →</a>
+    </div>
+  </div>
+
+  <header class="hjbf-header">
+    <div class="hjbf-wrap">
+      <a class="hjbf-logo" href="#hjbf-top" aria-label="黑椒盖饭官方网站首页">
+        <span class="hjbf-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12.4" r="7.4" fill="#f7ecd9"/><path d="M5 12.2c0-3.7 3.1-6.6 7-6.6s7 2.9 7 6.6" fill="none" stroke="#2b1d14" stroke-width="1.8" stroke-linecap="round"/><circle cx="9.4" cy="12.4" r="1" fill="#2b1d14"/><circle cx="14.6" cy="13.2" r="1" fill="#2b1d14"/><circle cx="12" cy="15.8" r=".9" fill="#2b1d14"/></svg>
+        </span>
+        <span class="hjbf-logo-text"><b>黑椒盖饭</b><span>HEIJIAO RICE BOWL</span></span>
+      </a>
+
+      <nav class="hjbf-nav" id="hjbf-nav" aria-label="主导航">
+        <a href="#hjbf-top">首页</a>
+        <a href="#hjbf-focus">焦点内容</a>
+        <a href="#hjbf-videos">视频流</a>
+        <a href="#hjbf-topics">专题企划</a>
+        <a href="#hjbf-authors">创作者</a>
+        <a href="#hjbf-story">深度解析</a>
+        <a href="#hjbf-news">企业动态</a>
+        <a href="#hjbf-faq">帮助</a>
+        <a href="#hjbf-contact">联系投稿</a>
+      </nav>
+
+      <div class="hjbf-search">
+        <label class="hjbf-sr" for="hjbf-search-input">搜索黑椒盖饭内容</label>
+        <input id="hjbf-search-input" type="search" placeholder="搜索：黑椒汁 / 牛肉腌制 / 火候">
+        <button class="hjbf-search-btn" id="hjbf-search-btn" type="button">搜索</button>
+        <div class="hjbf-search-tip" id="hjbf-search-tip"></div>
+      </div>
+
+      <button class="hjbf-burger" id="hjbf-burger" type="button" aria-label="展开导航菜单" aria-expanded="false">☰ 菜单</button>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hjbf-hero" aria-labelledby="hjbf-h1">
+    <div class="hjbf-wrap hjbf-hero-grid">
+      <div>
+        <span class="hjbf-badge">黑椒盖饭 · 官方网站</span>
+        <h1 class="hjbf-h1" id="hjbf-h1"><em>黑椒盖饭</em></h1>
+        <p class="hjbf-hero-slogan">一勺黑椒香，一碗饭正好 —— 家常复刻的完整版方法论</p>
+        <p class="hjbf-hero-intro">
+          作为国内专注「黑椒盖饭」这一垂直品类的视频品牌，我们以官方网站的形态，把这道看似寻常的盖饭拆解成可被复制的完整体系：黑椒汁的三段式配比、牛肉的分切与腌制、家庭灶与商用猛火的火候换算、米饭含水率与酱汁挂壁的关系，再到一碗端上桌时的温度节奏。平台汇聚原创高清教程、创作者访谈与社区实践记录，让每一个普通的厨房，都能端出一份体面、稳定、值得信赖的黑椒盖饭。
+        </p>
+        <div class="hjbf-hero-actions">
+          <a class="hjbf-btn hjbf-btn-main" href="#hjbf-focus">进入焦点内容 ▸</a>
+          <a class="hjbf-btn hjbf-btn-ghost" href="#hjbf-videos">浏览视频流</a>
+          <a class="hjbf-btn hjbf-btn-ghost" href="#hjbf-contact">投稿入口</a>
+        </div>
+        <div class="hjbf-stats">
+          <div class="hjbf-stat"><b data-hjbf-count="1860">1860</b><span>原创高清视频（条）</span></div>
+          <div class="hjbf-stat"><b data-hjbf-count="42">42</b><span>签约创作者（位）</span></div>
+          <div class="hjbf-stat"><b data-hjbf-count="97">97</b><span>复刻成功率口碑（%）</span></div>
+        </div>
+      </div>
+
+      <div class="hjbf-hero-visual">
+        <div class="hjbf-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233a2718'/%3E%3Cstop offset='1' stop-color='%23664125'/%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='.5' cy='.42' r='.5'%3E%3Cstop offset='0' stop-color='%23ffc27a' stop-opacity='.5'/%3E%3Cstop offset='1' stop-color='%23ffc27a' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23bg)'/%3E%3Cellipse cx='400' cy='300' rx='300' ry='220' fill='url(%23glow)'/%3E%3Cg%3E%3Cellipse cx='400' cy='430' rx='230' ry='60' fill='%231f140c' opacity='.55'/%3E%3Cpath d='M180 300h440a230 230 0 0 1-440 0z' fill='%23f4e7d2'/%3E%3Cpath d='M190 300h420v26H190z' fill='%23e3d1b4'/%3E%3Cpath d='M215 300c0-24 82-44 185-44s185 20 185 44z' fill='%23f9f1e0'/%3E%3Cellipse cx='400' cy='306' rx='172' ry='34' fill='%238a5a2b'/%3E%3Cellipse cx='400' cy='306' rx='150' ry='27' fill='%23c98b3e'/%3E%3Cg fill='%23472b17'%3E%3Ccircle cx='338' cy='296' r='13'/%3E%3Ccircle cx='382' cy='286' r='15'/%3E%3Ccircle cx='430' cy='290' r='14'/%3E%3Ccircle cx='470' cy='302' r='12'/%3E%3Ccircle cx='360' cy='316' r='12'/%3E%3Ccircle cx='412' cy='314' r='13'/%3E%3Ccircle cx='452' cy='320' r='11'/%3E%3C/g%3E%3Cg fill='%23e3b96f'%3E%3Ccircle cx='356' cy='294' r='4'/%3E%3Ccircle cx='398' cy='288' r='4'/%3E%3Ccircle cx='445' cy='296' r='4'/%3E%3Ccircle cx='372' cy='312' r='3.4'/%3E%3Ccircle cx='428' cy='310' r='3.4'/%3E%3C/g%3E%3Cg stroke='%236d9440' stroke-width='5' stroke-linecap='round' fill='none'%3E%3Cpath d='M300 270c14-10 26-8 38 2'/%3E%3Cpath d='M392 256c12-12 26-12 38-2'/%3E%3Cpath d='M462 274c12-8 24-6 34 4'/%3E%3C/g%3E%3Cg fill='%23f7ecd9' opacity='.9'%3E%3Ccircle cx='330' cy='305' r='2'/%3E%3Ccircle cx='400' cy='302' r='2'/%3E%3Ccircle cx='462' cy='308' r='2'/%3E%3C/g%3E%3C/g%3E%3Ctext x='400' y='530' text-anchor='middle' font-size='26' fill='%23ffdcaa' font-family='sans-serif' letter-spacing='4'%3E黑椒盖饭 · 完整版%3C/text%3E%3C/svg%3E" alt="黑椒盖饭完整版主视觉，白瓷碗盛满黑椒牛肉与米饭">
+          <span class="hjbf-hero-tag">原创 · 高清</span>
+        </div>
+        <div class="hjbf-hero-float">
+          本期复刻成功率 <b>97%</b> · 家庭灶版本已通过 3 轮实测
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="hjbf-section hjbf-section-alt" id="hjbf-focus" aria-labelledby="hjbf-focus-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">FOCUS / 焦点内容</div>
+        <h2 id="hjbf-focus-title">黑椒盖饭本周焦点：把「完整版」拆成看得懂的步骤</h2>
+        <p>焦点内容由官方内容团队出品，全部为原创高清素材，配套分镜脚本与配方卡，可作为品牌官方发布的教学基准。</p>
+      </div>
+
+      <div class="hjbf-focus-grid">
+        <article class="hjbf-focus-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b1d14'/%3E%3Cstop offset='1' stop-color='%235d3d22'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg opacity='.9'%3E%3Ccircle cx='180' cy='150' r='90' fill='%23c98b3e' opacity='.28'/%3E%3Ccircle cx='640' cy='330' r='120' fill='%23e08a2c' opacity='.22'/%3E%3C/g%3E%3Crect x='80' y='120' width='290' height='200' rx='16' fill='%23f6ecd9'/%3E%3Crect x='100' y='146' width='250' height='14' rx='7' fill='%232b1d14' opacity='.7'/%3E%3Crect x='100' y='176' width='190' height='10' rx='5' fill='%232b1d14' opacity='.4'/%3E%3Crect x='100' y='200' width='220' height='10' rx='5' fill='%232b1d14' opacity='.4'/%3E%3Crect x='100' y='232' width='250' height='54' rx='10' fill='%23e08a2c' opacity='.85'/%3E%3Ctext x='225' y='266' text-anchor='middle' font-size='24' fill='%232b1d14' font-family='sans-serif'%3E三段式黑椒汁%3C/text%3E%3Cpath d='M420 160h300v16H420z' fill='%23ffdcaa' opacity='.6'/%3E%3Cpath d='M420 196h240v12H420z' fill='%23ffdcaa' opacity='.35'/%3E%3Cpath d='M420 224h270v12H420z' fill='%23ffdcaa' opacity='.35'/%3E%3Cpath d='M420 252h200v12H420z' fill='%23ffdcaa' opacity='.35'/%3E%3Ccircle cx='700' cy='120' r='34' fill='%23e08a2c'/%3E%3Cpath d='M690 120l8 9 16-18' stroke='%232b1d14' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="焦点视频封面：黑椒汁三段式配比完整拆解">
+          <div class="hjbf-focus-main-body">
+            <h3>黑椒盖饭完整版 01｜黑椒汁三段式配比，从爆香到收稠</h3>
+            <p>为什么同样是黑椒酱，有人做出来发苦、有人却香气有层次？这一期把黑椒碎、洋葱、黄油、生抽与糖的投放顺序按秒拆开，给出家庭可操作的三段式配比表，并解释「先香后咸再回甜」的味觉路径。</p>
+            <div class="hjbf-meta-row">
+              <span>作者：官方内容组</span><span>时长 14:26</span><span>热度 12.8 万</span><span>更新于 11 月 12 日</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="hjbf-focus-side">
+          <article class="hjbf-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f2e2c8'/%3E%3Ccircle cx='200' cy='150' r='110' fill='%23fff8ea'/%3E%3Cellipse cx='200' cy='170' rx='86' ry='30' fill='%23a5652c'/%3E%3Cg fill='%234a2c16'%3E%3Ccircle cx='160' cy='162' r='9'/%3E%3Ccircle cx='200' cy='158' r='10'/%3E%3Ccircle cx='238' cy='166' r='9'/%3E%3C/g%3E%3Cpath d='M120 100l30 20-30 12z' fill='%23e08a2c'/%3E%3Ctext x='200' y='260' text-anchor='middle' font-size='17' fill='%232b1d14' font-family='sans-serif'%3E牛肉分切与腌制%3C/text%3E%3C/svg%3E" alt="封面插图：牛肉逆纹分切与上浆腌制步骤">
+            <div class="hjbf-mini-body">
+              <h4>牛肉为什么必须逆纹切？上浆顺序讲清楚</h4>
+              <p>从肌纤维方向到小苏打用量，一次说透嫩滑的底层原因。</p>
+              <div class="hjbf-tagline">教程干货 · 09:52</div>
+            </div>
+          </article>
+
+          <article class="hjbf-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%232b1d14'/%3E%3Crect x='60' y='190' width='280' height='16' rx='8' fill='%236b4425'/%3E%3Cpath d='M90 190c10-42 50-66 110-66s100 24 110 66z' fill='%23c98b3e'/%3E%3Cpath d='M110 190c8-30 42-48 90-48s82 18 90 48z' fill='%23e3b96f'/%3E%3Ccircle cx='200' cy='120' r='10' fill='%23ffdcaa'/%3E%3Ctext x='200' y='252' text-anchor='middle' font-size='17' fill='%23ffdcaa' font-family='sans-serif'%3E家庭灶火候换算%3C/text%3E%3C/svg%3E" alt="封面插图：家庭灶火候与商用猛火对照示意">
+            <div class="hjbf-mini-body">
+              <h4>家庭灶也能出锅气？火候换算对照卡</h4>
+              <p>用锅温与下锅量两个变量，替代看不见摸不着的「猛火」。</p>
+              <div class="hjbf-tagline">实用技巧 · 11:18</div>
+            </div>
+          </article>
+
+          <article class="hjbf-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e9dcc4'/%3E%3Crect x='110' y='80' width='180' height='150' rx='14' fill='%23fdf7ec' stroke='%23a5652c' stroke-width='3'/%3E%3Cpath d='M140 120h120M140 150h120M140 180h80' stroke='%23c06a12' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='300' cy='220' r='34' fill='%23e08a2c'/%3E%3Ctext x='200' y='266' text-anchor='middle' font-size='17' fill='%232b1d14' font-family='sans-serif'%3E米饭含水率测试%3C/text%3E%3C/svg%3E" alt="封面插图：米饭含水率对酱汁挂壁影响的测试记录">
+            <div class="hjbf-mini-body">
+              <h4>米饭含水率差 4%，酱汁挂壁差多少</h4>
+              <p>三组对照实验，给出一碗饭最合适的软硬区间。</p>
+              <div class="hjbf-tagline">深度测评 · 08:40</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频流 -->
+  <section class="hjbf-section" id="hjbf-videos" aria-labelledby="hjbf-videos-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">VIDEO STREAM / 热门视频流</div>
+        <h2 id="hjbf-videos-title">黑椒盖饭视频流：每一帧都指向那碗饭</h2>
+        <p>围绕黑椒盖饭的日常记录、经验分享与深度测评，卡片可按主题筛选，点赞与收藏状态会随手更新。</p>
+      </div>
+
+      <div class="hjbf-filters" id="hjbf-filters" role="group" aria-label="视频主题筛选">
+        <button class="hjbf-chip hjbf-chip-on" data-hjbf-filter="all" type="button">全部</button>
+        <button class="hjbf-chip" data-hjbf-filter="教程" type="button">教程干货</button>
+        <button class="hjbf-chip" data-hjbf-filter="测评" type="button">深度测评</button>
+        <button class="hjbf-chip" data-hjbf-filter="日常" type="button">日常记录</button>
+        <button class="hjbf-chip" data-hjbf-filter="访谈" type="button">人物访谈</button>
+      </div>
+
+      <div class="hjbf-videos" id="hjbf-video-grid">
+
+        <article class="hjbf-card" data-hjbf-cat="教程">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232b1d14'/%3E%3Ccircle cx='320' cy='170' r='110' fill='%23f6ecd9'/%3E%3Cellipse cx='320' cy='190' rx='80' ry='26' fill='%23bf7a2e'/%3E%3Cpath d='M240 150c30-26 130-26 160 0' stroke='%238a5a2b' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3Ctext x='320' y='300' text-anchor='middle' font-size='22' fill='%23ffdcaa' font-family='sans-serif'%3E爆香第一步%3C/text%3E%3C/svg%3E" alt="视频封面：黑椒爆香第一步的油温与香料下锅时机">
+            <span class="hjbf-cover-tag">教程干货</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>黑椒爆香：油温几成热，香料才不会发苦</h3>
+            <p>用一滴水测试替代经验判断，把黑椒碎的香气窗口控制在 12 秒内。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#c06a12">陈</span>陈灶台 · 官方内容组</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>1.2万</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="黑椒爆香：油温几成热，香料才不会发苦">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="测评">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%233f2a19'/%3E%3Cg%3E%3Crect x='70' y='60' width='230' height='220' rx='16' fill='%23fdf7ec'/%3E%3Crect x='340' y='60' width='230' height='220' rx='16' fill='%23efdfc4'/%3E%3C/g%3E%3Ccircle cx='185' cy='170' r='58' fill='%23c98b3e'/%3E%3Ccircle cx='455' cy='170' r='58' fill='%23a5652c'/%3E%3Ctext x='185' y='262' text-anchor='middle' font-size='18' fill='%232b1d14' font-family='sans-serif'%3EA 方案%3C/text%3E%3Ctext x='455' y='262' text-anchor='middle' font-size='18' fill='%232b1d14' font-family='sans-serif'%3EB 方案%3C/text%3E%3C/svg%3E" alt="视频封面：两种黑椒汁方案并排盲测对比">
+            <span class="hjbf-cover-tag">深度测评</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>现磨 vs 瓶装黑椒：盲测 20 人给出的真实排序</h3>
+            <p>香气留存、辛辣强度、尾段回甘三个维度打分，结果和预想不太一样。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#6b4425">林</span>林小满的厨房</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>8643</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="现磨 vs 瓶装黑椒：盲测 20 人给出的真实排序">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="日常">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e9dcc4'/%3E%3Ccircle cx='500' cy='90' r='52' fill='%23f2b45c'/%3E%3Crect x='80' y='140' width='480' height='150' rx='10' fill='%23fdf7ec'/%3E%3Crect x='80' y='140' width='480' height='18' rx='9' fill='%23c98b3e'/%3E%3Crect x='120' y='182' width='140' height='70' rx='8' fill='%23bf7a2e'/%3E%3Crect x='290' y='182' width='100' height='70' rx='8' fill='%23a5652c'/%3E%3Crect x='420' y='182' width='100' height='70' rx='8' fill='%238a5a2b'/%3E%3C/svg%3E" alt="视频封面：傍晚厨房窗边的黑椒盖饭备料日常">
+            <span class="hjbf-cover-tag">日常记录</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>下班后 40 分钟：一个人也值得一份黑椒盖饭</h3>
+            <p>从洗菜到端碗，记录一个普通工作日晚餐的完整节奏。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#8a5a2b">周</span>周周的一人食</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>2.1万</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="下班后 40 分钟：一个人也值得一份黑椒盖饭">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="教程">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23352012'/%3E%3Cg fill='%23e08a2c' opacity='.9'%3E%3Cpath d='M140 90c40 40 0 80 40 120s0 60 40 90' stroke='%23e08a2c' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3Cg stroke='%23ffdcaa' stroke-width='7' fill='none' stroke-linecap='round' opacity='.8'%3E%3Cpath d='M300 80v200'/%3E%3Cpath d='M400 70v220'/%3E%3Cpath d='M500 90v190'/%3E%3C/g%3E%3Ctext x='320' y='320' text-anchor='middle' font-size='20' fill='%23ffdcaa' font-family='sans-serif'%3E收稠与挂壁%3C/text%3E%3C/svg%3E" alt="视频封面：黑椒汁收稠与挂壁时间点演示">
+            <span class="hjbf-cover-tag">教程干货</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>收稠到什么程度停手？用勺子背做 3 次测试</h3>
+            <p>挂壁、流线、回滴三个判断标准，避免酱汁过稠发糊。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#a5652c">吴</span>吴师傅的灶前课</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>6730</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="收稠到什么程度停手？用勺子背做 3 次测试">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="访谈">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f6ecd9'/%3E%3Ccircle cx='200' cy='150' r='72' fill='%23c06a12'/%3E%3Ctext x='200' y='170' text-anchor='middle' font-size='46' fill='%23ffdcaa' font-family='sans-serif'%3E吴%3C/text%3E%3Crect x='310' y='96' width='260' height='14' rx='7' fill='%232b1d14' opacity='.65'/%3E%3Crect x='310' y='130' width='210' height='12' rx='6' fill='%232b1d14' opacity='.4'/%3E%3Crect x='310' y='160' width='240' height='12' rx='6' fill='%232b1d14' opacity='.4'/%3E%3Crect x='310' y='190' width='170' height='12' rx='6' fill='%232b1d14' opacity='.4'/%3E%3Ctext x='320' y='270' text-anchor='middle' font-size='19' fill='%232b1d14' font-family='sans-serif'%3E访谈 · 二十年灶台%3C/text%3E%3C/svg%3E" alt="视频封面：食堂老师傅吴师傅的人物访谈画面">
+            <span class="hjbf-cover-tag">人物访谈</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>在食堂做了二十年黑椒盖饭，他把配方写成了三句话</h3>
+            <p>一位老师傅的口述史：什么该省，什么绝不能省。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#6b4425">顾</span>顾言 · 品牌访谈组</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>1.5万</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="在食堂做了二十年黑椒盖饭，他把配方写成了三句话">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="日常">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23462e1a'/%3E%3Crect x='60' y='220' width='520' height='90' rx='12' fill='%232b1d14'/%3E%3Cg fill='%23e08a2c'%3E%3Ccircle cx='150' cy='200' r='46'/%3E%3Ccircle cx='320' cy='190' r='56'/%3E%3Ccircle cx='490' cy='200' r='46'/%3E%3C/g%3E%3Cg fill='%23ffdcaa'%3E%3Ccircle cx='150' cy='196' r='10'/%3E%3Ccircle cx='320' cy='184' r='12'/%3E%3Ccircle cx='490' cy='196' r='10'/%3E%3C/g%3E%3C/svg%3E" alt="视频封面：家庭聚会同时端出三碗黑椒盖饭的场景">
+            <span class="hjbf-cover-tag">日常记录</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>一次做三碗不出错：备料台的动线排布</h3>
+            <p>把切、腌、炒、收四个环节错开，三口锅也能同时出餐。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#bf7a2e">何</span>何家的周末餐桌</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>4318</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="一次做三碗不出错：备料台的动线排布">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="测评">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f2e2c8'/%3E%3Cg fill='%23fdf7ec' stroke='%23c06a12' stroke-width='3'%3E%3Ccircle cx='180' cy='180' r='72'/%3E%3Ccircle cx='330' cy='180' r='72'/%3E%3Ccircle cx='480' cy='180' r='72'/%3E%3C/g%3E%3Ccircle cx='180' cy='180' r='40' fill='%23d7a55e'/%3E%3Ccircle cx='330' cy='180' r='40' fill='%23b9743a'/%3E%3Ccircle cx='480' cy='180' r='40' fill='%23915a2b'/%3E%3C/svg%3E" alt="视频封面：三种米饭配黑椒汁的口感对照实验">
+            <span class="hjbf-cover-tag">深度测评</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>珍珠米、丝苗米、糙米：谁来接住黑椒汁</h3>
+            <p>吸汁能力与颗粒感的取舍，一次给你一张选择表。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#c06a12">苏</span>苏禾认真吃饭</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>9124</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="珍珠米、丝苗米、糙米：谁来接住黑椒汁">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="教程">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%233a2718'/%3E%3Cg stroke='%23ffdcaa' stroke-width='6' fill='none' stroke-linecap='round'%3E%3Cpath d='M140 120h140v140H140z'/%3E%3Cpath d='M330 100h170v120H330z'/%3E%3Cpath d='M330 250h170v50H330z'/%3E%3C/g%3E%3Ccircle cx='210' cy='190' r='26' fill='%23e08a2c'/%3E%3Ctext x='320' y='330' text-anchor='middle' font-size='19' fill='%23ffdcaa' font-family='sans-serif'%3E脚本结构图%3C/text%3E%3C/svg%3E" alt="视频封面：短视频脚本结构图与分镜排布示范">
+            <span class="hjbf-cover-tag">创作幕后</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>一条黑椒盖饭视频的脚本结构：前 3 秒放什么</h3>
+            <p>从钩子、拆解到复刻验证，官方内容组公开分镜模板。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#6b4425">官</span>官方内容组</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>5287</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="一条黑椒盖饭视频的脚本结构：前 3 秒放什么">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hjbf-card" data-hjbf-cat="访谈">
+          <div class="hjbf-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e9dcc4'/%3E%3Crect x='90' y='70' width='180' height='220' rx='14' fill='%23c06a12'/%3E%3Crect x='300' y='70' width='250' height='220' rx='14' fill='%23fdf7ec'/%3E%3Ccircle cx='180' cy='150' r='46' fill='%23ffdcaa'/%3E%3Crect x='330' y='110' width='190' height='12' rx='6' fill='%232b1d14' opacity='.55'/%3E%3Crect x='330' y='140' width='150' height='10' rx='5' fill='%232b1d14' opacity='.35'/%3E%3Crect x='330' y='170' width='170' height='10' rx='5' fill='%232b1d14' opacity='.35'/%3E%3Crect x='330' y='200' width='110' height='10' rx='5' fill='%232b1d14' opacity='.35'/%3E%3C/svg%3E" alt="视频封面：外卖骑手与黑椒盖饭的街巷记录访谈">
+            <span class="hjbf-cover-tag">人物访谈</span>
+            <span class="hjbf-cover-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 2l14 8-14 8z"/></svg></span>
+          </div>
+          <div class="hjbf-card-body">
+            <h3>街角小店的第十二年：一碗黑椒盖饭的城市记忆</h3>
+            <p>店主、常客与骑手的三种视角，拼出一道菜的在地时间。</p>
+            <div class="hjbf-author"><span class="hjbf-avatar" style="background:#8a5a2b">言</span>城市切片计划</div>
+            <div class="hjbf-card-foot">
+              <button class="hjbf-act hjbf-like" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.4 12 20 12 20z"/></svg><span>1.8万</span></button>
+              <button class="hjbf-act hjbf-save" type="button"><svg viewBox="0 0 24 24"><path d="M7 4h10v16l-5-4-5 4z"/></svg><span>收藏</span></button>
+              <button class="hjbf-act hjbf-share" type="button" data-hjbf-title="街角小店的第十二年：一碗黑椒盖饭的城市记忆">分享</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="hjbf-section hjbf-section-alt" id="hjbf-topics" aria-labelledby="hjbf-topics-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">SERIES / 专题企划</div>
+        <h2 id="hjbf-topics-title">黑椒盖饭的四个长期专题，逐个把细节做厚</h2>
+        <p>专题由官方编辑与签约创作者共同维护，持续更新，构成品牌内容生态的骨干。</p>
+      </div>
+
+      <div class="hjbf-topics">
+        <article class="hjbf-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%233a2718'/%3E%3Ccircle cx='130' cy='130' r='70' fill='%23c98b3e' opacity='.85'/%3E%3Ccircle cx='260' cy='180' r='54' fill='%23e08a2c' opacity='.7'/%3E%3Cpath d='M60 240h280' stroke='%23ffdcaa' stroke-width='8' stroke-linecap='round' opacity='.6'/%3E%3C/svg%3E" alt="专题封面：黑椒汁配比实验室系列">
+          <div class="hjbf-topic-mask"></div>
+          <div class="hjbf-topic-body">
+            <h3>配比实验室</h3>
+            <p>用可复现的克数与顺序，替代模糊的「适量」。</p>
+            <span class="hjbf-topic-state">已更新 9 期</span>
+          </div>
+        </article>
+
+        <article class="hjbf-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%232b1d14'/%3E%3Cg stroke='%23e08a2c' stroke-width='7' fill='none' stroke-linecap='round'%3E%3Cpath d='M90 220V90'/%3E%3Cpath d='M150 220V120'/%3E%3Cpath d='M210 220V70'/%3E%3Cpath d='M270 220V140'/%3E%3Cpath d='M330 220V100'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：家庭灶火候对照企划数据柱状示意">
+          <div class="hjbf-topic-mask"></div>
+          <div class="hjbf-topic-body">
+            <h3>家庭灶火候课</h3>
+            <p>没有猛火也能出锅气，用温度与下锅量说话。</p>
+            <span class="hjbf-topic-state">更新中 · 第 5 期</span>
+          </div>
+        </article>
+
+        <article class="hjbf-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f2e2c8'/%3E%3Crect x='70' y='80' width='120' height='150' rx='10' fill='%23c06a12'/%3E%3Crect x='210' y='110' width='120' height='120' rx='10' fill='%238a5a2b'/%3E%3Ccircle cx='130' cy='150' r='26' fill='%23ffdcaa'/%3E%3Ccircle cx='270' cy='170' r='22' fill='%23ffdcaa'/%3E%3C/svg%3E" alt="专题封面：一碗饭的城市记忆人物合集">
+          <div class="hjbf-topic-mask"></div>
+          <div class="hjbf-topic-body">
+            <h3>一碗饭的城市记忆</h3>
+            <p>走访街角小店，记录黑椒盖饭与人的关系。</p>
+            <span class="hjbf-topic-state">已更新 6 期</span>
+          </div>
+        </article>
+
+        <article class="hjbf-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23462e1a'/%3E%3Cg fill='%23ffdcaa' opacity='.9'%3E%3Ccircle cx='120' cy='120' r='34'/%3E%3Ccircle cx='200' cy='160' r='28'/%3E%3Ccircle cx='280' cy='110' r='30'/%3E%3C/g%3E%3Cpath d='M60 250h280' stroke='%23e08a2c' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E" alt="专题封面：黑椒盖饭复刻挑战赛作品合集">
+          <div class="hjbf-topic-mask"></div>
+          <div class="hjbf-topic-body">
+            <h3>复刻挑战赛</h3>
+            <p>社区同好同做一碗饭，投票选出月度口碑作品。</p>
+            <span class="hjbf-topic-state">报名进行中</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="hjbf-section" id="hjbf-authors" aria-labelledby="hjbf-authors-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">CREATORS / 创作者矩阵</div>
+        <h2 id="hjbf-authors-title">这些创作者，把黑椒盖饭讲出了各自的性格</h2>
+        <p>点击卡片可查看创作者简介与代表作品，签约创作者由官方提供正版素材支持与高清导出能力。</p>
+      </div>
+
+      <div class="hjbf-authors" id="hjbf-author-grid">
+        <article class="hjbf-author-card">
+          <span class="hjbf-avatar" style="background:#c06a12">陈</span>
+          <h3>陈灶台</h3>
+          <p class="hjbf-field">擅长领域：火候与锅气</p>
+          <p>前职业厨房二灶，专攻家庭灶复刻商用火候。说话慢，下勺快，视频里最常见的就是锅边那圈白雾。</p>
+          <div class="hjbf-author-nums"><span><b>186</b>作品</span><span><b>28.4万</b>关注</span></div>
+          <button class="hjbf-act hjbf-author-open" type="button" data-hjbf-author="陈灶台" data-hjbf-bio="前职业厨房二灶，现专注于把商用火候翻译成家庭可操作的变量。代表作《家庭灶火候对照卡》《黑椒爆香的 12 秒窗口》。" style="margin-top:12px;justify-content:center;width:100%;">查看简介</button>
+        </article>
+
+        <article class="hjbf-author-card">
+          <span class="hjbf-avatar" style="background:#6b4425">林</span>
+          <h3>林小满的厨房</h3>
+          <p class="hjbf-field">擅长领域：配方对照测评</p>
+          <p>喜欢做实验式测评，用盲测、称重和记录表把厨房变成小型实验室，视频节奏干净利落。</p>
+          <div class="hjbf-author-nums"><span><b>143</b>作品</span><span><b>21.7万</b>关注</span></div>
+          <button class="hjbf-act hjbf-author-open" type="button" data-hjbf-author="林小满的厨房" data-hjbf-bio="独立测评创作者，坚持双盲与多轮重复实验。代表作《现磨 vs 瓶装黑椒盲测》《三种米饭接汁对照》。" style="margin-top:12px;justify-content:center;width:100%;">查看简介</button>
+        </article>
+
+        <article class="hjbf-author-card">
+          <span class="hjbf-avatar" style="background:#8a5a2b">周</span>
+          <h3>周周的一人食</h3>
+          <p class="hjbf-field">擅长领域：日常记录与治愈感</p>
+          <p>拍下班后的厨房，光线柔和，声音都是真实的。她说一个人吃饭，也值得把碗摆正。</p>
+          <div class="hjbf-author-nums"><span><b>97</b>作品</span><span><b>33.1万</b>关注</span></div>
+          <button class="hjbf-act hjbf-author-open" type="button" data-hjbf-author="周周的一人食" data-hjbf-bio="生活记录创作者，关注独居饮食与时间管理。代表作《下班后 40 分钟》《一人份也认真摆盘》。" style="margin-top:12px;justify-content:center;width:100%;">查看简介</button>
+        </article>
+
+        <article class="hjbf-author-card">
+          <span class="hjbf-avatar" style="background:#a5652c">吴</span>
+          <h3>吴师傅的灶前课</h3>
+          <p class="hjbf-field">擅长领域：传统技法拆解</p>
+          <p>在集体食堂做了二十年黑椒盖饭，如今把经验整理成教案。口头禅是「该省的省，该给的要给够」。</p>
+          <div class="hjbf-author-nums"><span><b>64</b>作品</span><span><b>17.9万</b>关注</span></div>
+          <button class="hjbf-act hjbf-author-open" type="button" data-hjbf-author="吴师傅的灶前课" data-hjbf-bio="资深食堂厨师，从业二十余年。代表作《收稠的三个判断标准》《批量出餐的动线安排》。" style="margin-top:12px;justify-content:center;width:100%;">查看简介</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="hjbf-section hjbf-section-alt" id="hjbf-story" aria-labelledby="hjbf-story-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">ESSAY / 厨房随笔</div>
+        <h2 id="hjbf-story-title">关于黑椒盖饭的三段短记</h2>
+        <p>文字来自创作者与用户投稿，是我们理解「真实」与「温暖」的方式。</p>
+      </div>
+
+      <div class="hjbf-essays">
+        <article class="hjbf-essay">
+          <h3>第一次做黑椒盖饭，我把它做成了黑椒糊</h3>
+          <p>火太大，汁太少，锅底一层焦黑。后来才知道，收稠不是把水烧干，而是让糖与淀粉在合适的温度里牵手。第二次我只改了一个变量——提前关火。那天晚上，饭粒终于亮了起来。</p>
+          <span>—— 投稿者 · 小于</span>
+        </article>
+        <article class="hjbf-essay">
+          <h3>我爸的标准：黑椒盖饭必须有一勺汤泡饭</h3>
+          <p>他总说盖饭要「润」，酱汁不能只挂在肉上，得顺着饭粒往下走。为了那一勺汤，我学会在收稠前多留半碗水。现在每次端上桌，他都会先舀一勺汤，再动筷子。</p>
+          <span>—— 投稿者 · 阿禾</span>
+        </article>
+        <article class="hjbf-essay">
+          <h3>在出租屋里，一口锅也能认真</h3>
+          <p>厨房只有一平方米，砧板架在水槽上。我把所有配比写在便利贴贴到墙上，按克数来。第三次成功的时候，我拍了张照片，米饭上那层酱汁亮得像刚擦过的地板。</p>
+          <span>—— 投稿者 · 小满</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="hjbf-section" id="hjbf-about" aria-labelledby="hjbf-about-title">
+    <div class="hjbf-wrap">
+      <article class="hjbf-article">
+        <div class="hjbf-sec-kicker">BRAND / 品牌深度解析</div>
+        <h2 id="hjbf-about-title">为什么我们要把「黑椒盖饭」做成一个官方网站</h2>
+        <p>黑椒盖饭是一个极其常见的名字，常见到很多人以为它没有门槛：米饭、肉、黑椒汁，三样东西凑在一起，好像就该是那个味道。但真正做过的人会知道，它几乎把所有基础功都考了一遍——香料的激发温度、肉类的纤维方向、淀粉的糊化程度、酱汁的浓度平衡、米饭的含水率，还有最后那十几秒的出锅时机。任何一个环节偏差，端出来的就是一盘「像黑椒盖饭的东西」。</p>
+
+        <h3>一、黑椒盖饭的门槛，藏在看不见的地方</h3>
+        <p>我们做过一组对照：同样的配方，只改变黑椒碎的投放时机，成品香气的主观评分差距接近一半。再比如牛肉，逆纹切与顺纹切在腌制时间相同的情况下，咀嚼时的纤维阻力完全不同。这些细节，在短视频里往往被一句「下锅炒香」带过，但它们恰恰决定了复刻能不能成功。作为深耕这一垂直领域的视频品牌，我们的选择是把细节做厚：每一个变量单独成片，每一期都给到可执行的数值与判断标准。</p>
+        <p>这也是品牌官网存在的意义。平台的视频流是流动的，而官方网站像一个稳定的索引，把「黑椒盖饭」这个关键词下的知识整理成体系：从原料、器具到流程，从单份到批量，从家庭灶到商用灶，形成可以被反复查阅的内容生态。</p>
+
+        <h3>二、完整版不是加长版，而是闭环</h3>
+        <p>「完整版」在我们这里有三层含义。第一层是流程完整：从备料到出锅，不跳过任何一个必要步骤，也不省略任何一个失败可能性。第二层是判断完整：不只告诉你做什么，还告诉你做到什么程度算对，比如收稠的三次勺子背测试。第三层是复现完整：给出替代方案，让没有某种食材或器具的人依然能做出八九不离十的成品。</p>
+        <ul>
+          <li>数值可复现：克数、温度、时间，尽量给区间而非单点。</li>
+          <li>判断可迁移：把「猛火」「适量」翻译成可感知的信号。</li>
+          <li>失败可诊断：常见翻车点逐条列出，并给出补救思路。</li>
+          <li>成本可控制：明确哪些环节可以省，哪些绝不能省。</li>
+        </ul>
+        <p>我们相信，专业并不等于复杂，而是把复杂解释清楚。一个愿意认真做一碗盖饭的人，值得拿到一份值得信赖的说明书。</p>
+
+        <h3>三、从一道菜，到一个持续运营的社区</h3>
+        <p>黑椒盖饭只是一个入口。我们真正在做的，是一个围绕「认真吃饭」这件事的社区：创作者分享各自的火候心得，用户上传自己的成品记录，官方团队负责整理、校对与发布。比赛、报名、投票、攻略、挑战这些机制，让内容不只是被观看，还能被参与。用户至上的原则在这里很具体——我们看到一条评论说酱汁太咸，就会在下一期补上减盐方案；我们看到有人问电磁炉能不能做，就专门拍一期电磁炉版本。</p>
+        <p>品牌故事不需要宏大，它可以就发生在厨房里。我们记录那些把碗摆正的瞬间，也记录那些做糊了又重新来过的夜晚。这种真实，比任何精致的摆盘都更有力量。</p>
+
+        <h3>四、内容生态与品质底线</h3>
+        <p>作为企业级内容平台，我们坚持原创与正版：所有焦点内容由官方内容组出品，签约创作者的作品经过授权后进入内容库，高清素材可下载用于个人学习。我们不追求数量上的虚高，而追求每一条内容都能被真正用上。行业领先不是一句口号，它体现在我们愿意为「黑椒碎应该多粗」这样的问题单独做一次测试。</p>
+        <p>未来，我们会继续扩展专题、丰富创作者矩阵、完善投稿与反馈通道，让「黑椒盖饭」这个关键词在中文互联网上有一个可靠、稳定、有温度的官方落点。</p>
+        <div class="hjbf-note">官方说明：本页所有配方与参数均来自内部测试与创作者实测，家庭操作时请结合自家灶具火力与锅具厚度适当调整。欢迎通过「联系与投稿」提交你的复刻结果。</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="hjbf-section hjbf-section-alt" aria-labelledby="hjbf-reviews-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">VOICES / 用户评价</div>
+        <h2 id="hjbf-reviews-title">他们做完了那碗饭，然后回来说了几句</h2>
+        <p>来自社区的真实反馈，语气不同，角度不同，但都指向同一个厨房。</p>
+      </div>
+
+      <div class="hjbf-reviews">
+        <article class="hjbf-review">
+          <div class="hjbf-review-head"><span class="hjbf-avatar" style="background:#c06a12">南</span><div><b>南风知我意</b><span>复刻第 4 次</span></div></div>
+          <div class="hjbf-stars">★★★★★</div>
+          <p>火候对照卡是真的有用。以前一直以为家里火不够，原来是我一次下太多肉，锅里温度掉下来了。分批炒之后，锅气一下子就上来了。</p>
+        </article>
+        <article class="hjbf-review">
+          <div class="hjbf-review-head"><span class="hjbf-avatar" style="background:#6b4425">一</span><div><b>一只小锅</b><span>关注 8 个月</span></div></div>
+          <div class="hjbf-stars">★★★★☆</div>
+          <p>黑椒汁的三段式配比讲得比我买的那本菜谱清楚。唯一想提的是，糖的量对我来说偏甜，我减了三分之一刚好。希望能出个减糖版。</p>
+        </article>
+        <article class="hjbf-review">
+          <div class="hjbf-review-head"><span class="hjbf-avatar" style="background:#8a5a2b">厨</span><div><b>厨房练习生</b><span>新用户</span></div></div>
+          <div class="hjbf-stars">★★★★★</div>
+          <p>第一次做就成功了，虽然卖相一般，但味道真的对。视频里说收稠要停手的时候我还不信，多煮了十秒就有点糊味，下次记住了。</p>
+        </article>
+        <article class="hjbf-review">
+          <div class="hjbf-review-head"><span class="hjbf-avatar" style="background:#a5652c">老</span><div><b>老陈的晚饭</b><span>签约创作者关注者</span></div></div>
+          <div class="hjbf-stars">★★★★★</div>
+          <p>看了吴师傅那期访谈很感慨。食堂菜不一定粗糙，关键是有没有人愿意较真。这个网站的内容看得出来是认真做过的，不是拼凑的。</p>
+        </article>
+        <article class="hjbf-review">
+          <div class="hjbf-review-head"><span class="hjbf-avatar" style="background:#bf7a2e">土</span><div><b>土豆炖一切</b><span>复刻第 2 次</span></div></div>
+          <div class="hjbf-stars">★★★★☆</div>
+          <p>建议加一个电磁炉专项。我家只有电磁炉，按视频里的温度来还是会差一点，后来自己调高了功率才好。整体还是很有帮助的。</p>
+        </article>
+        <article class="hjbf-review">
+          <div class="hjbf-review-head"><span class="hjbf-avatar" style="background:#c06a12">饭</span><div><b>饭要吃饱</b><span>关注 1 年</span></div></div>
+          <div class="hjbf-stars">★★★★★</div>
+          <p>那个米饭含水率的对照实验太实用了。我一直以为饭越干越好，其实稍微润一点，酱汁挂得更均匀，口感也更完整。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动态 + 合作 -->
+  <section class="hjbf-section" id="hjbf-news" aria-labelledby="hjbf-news-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">UPDATES / 企业动态</div>
+        <h2 id="hjbf-news-title">官方发布与近期更新</h2>
+        <p>这里记录品牌的最新动作、内容更新与活动信息，保持稳定透明的发布节奏。</p>
+      </div>
+
+      <div class="hjbf-columns">
+        <div class="hjbf-news">
+          <div class="hjbf-news-item">
+            <span class="hjbf-news-date">11-12</span>
+            <div>
+              <h4>「黑椒盖饭·完整版」第 12 期上线</h4>
+              <p>本期聚焦黑椒汁三段式配比，同步发布家庭灶简化版配方卡，可在投稿页面下载。</p>
+            </div>
+          </div>
+          <div class="hjbf-news-item">
+            <span class="hjbf-news-date">11-08</span>
+            <div>
+              <h4>秋季厨艺挑战赛开启报名</h4>
+              <p>主题为「我家的黑椒盖饭」，面向所有用户开放，报名截止 11 月 30 日，评审含社区投票环节。</p>
+            </div>
+          </div>
+          <div class="hjbf-news-item">
+            <span class="hjbf-news-date">10-30</span>
+            <div>
+              <h4>创作者计划 2026 冬季批次招募</h4>
+              <p>面向美食记录与技法拆解方向，入选创作者可获得官方拍摄支持与高清素材授权。</p>
+            </div>
+          </div>
+          <div class="hjbf-news-item">
+            <span class="hjbf-news-date">10-21</span>
+            <div>
+              <h4>内容库结构升级，新增配方索引</h4>
+              <p>所有教程类内容按原料、器具、难度重新归类，支持通过搜索框直接定位到具体参数。</p>
+            </div>
+          </div>
+          <div class="hjbf-news-item">
+            <span class="hjbf-news-date">10-09</span>
+            <div>
+              <h4>品牌与社会责任：食材零浪费倡议</h4>
+              <p>联合合作厨房推出边角料再利用系列，减少备料环节浪费，相关内容持续更新中。</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hjbf-partners" aria-labelledby="hjbf-partner-title">
+          <h3 id="hjbf-partner-title" style="font-size:16px;margin:0 0 6px;">合作品牌与伙伴</h3>
+          <p style="font-size:13px;color:var(--hjbf-ink-soft);margin:0 0 14px;">与认真做食材、做器具、做内容的人一起。</p>
+          <div class="hjbf-partner-grid">
+            <div class="hjbf-partner">辛香之源 · 香料</div>
+            <div class="hjbf-partner">南亩米业 · 大米</div>
+            <div class="hjbf-partner">铁釜工坊 · 锅具</div>
+            <div class="hjbf-partner">巷口食集 · 社区</div>
+            <div class="hjbf-partner">城食纪 · 媒体</div>
+            <div class="hjbf-partner">慢火研究所 · 内容</div>
+          </div>
+          <p style="font-size:12.5px;color:var(--hjbf-ink-soft);margin:14px 0 0;">如需品牌合作或内容共创，请通过页面底部的联系入口与我们沟通。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="hjbf-section hjbf-section-alt" id="hjbf-faq" aria-labelledby="hjbf-faq-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">FAQ / 帮助中心</div>
+        <h2 id="hjbf-faq-title">关于黑椒盖饭内容与平台的常见问题</h2>
+        <p>如果你在复刻过程中遇到问题，或想了解投稿与素材使用规则，可以从这里开始。</p>
+      </div>
+
+      <div class="hjbf-faq">
+        <details open>
+          <summary>黑椒盖饭的「完整版」具体指什么？</summary>
+          <p>完整版指从备料、腌制、调汁、炒制到收稠与装盘的完整流程，并包含判断标准与常见失败诊断。我们不省略步骤，也会说明哪些环节可以简化，让家庭厨房能够稳定复现。</p>
+        </details>
+        <details>
+          <summary>没有现磨黑椒，用瓶装黑椒粉可以吗？</summary>
+          <p>可以做，但香气层次会弱一些。建议在爆香阶段补少量整粒黑椒略拍碎，或在出锅前再补撒一次黑椒粉，弥补前段香气的损失。具体对比可参考「现磨 vs 瓶装黑椒」测评视频。</p>
+        </details>
+        <details>
+          <summary>牛肉可以换成别的肉类或素食吗？</summary>
+          <p>可以。鸡腿肉建议切稍厚并缩短腌制时间；猪里脊需注意上浆后滑炒；素食版本可用杏鲍菇或老豆腐，重点是先煎出表面水分再入汁，避免酱汁被稀释。</p>
+        </details>
+        <details>
+          <summary>只有电磁炉，火力不够怎么办？</summary>
+          <p>关键不是火力上限，而是锅内温度的维持。建议减少单次下锅量、提前预热锅具、分批炒制肉类，并适当延长爆香时间。我们在后续内容中会补充电磁炉专项参数。</p>
+        </details>
+        <details>
+          <summary>如何向官方投稿我的复刻作品？</summary>
+          <p>可以通过页面底部的投稿表单提交作品说明与联系方式，或使用联系信息中的邮箱。作品需为本人原创，图片或视频素材请确保清晰可辨。入选作品会进入社区作品墙并获得官方推荐。</p>
+        </details>
+        <details>
+          <summary>平台内容可以转载或二次创作吗？</summary>
+          <p>官方原创内容欢迎在不修改原意的前提下注明来源分享。商业使用与二次剪辑需提前获得授权。签约创作者素材以授权范围为准，请勿超出授权用途。</p>
+        </details>
+        <details>
+          <summary>挑战赛的评审标准是什么？</summary>
+          <p>评审分为三部分：完成度（流程是否完整）、稳定性（成品是否可重复）、呈现度（表达与记录是否清晰）。社区投票占一定权重，最终结果会在企业动态中公布。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系与投稿 -->
+  <section class="hjbf-section" id="hjbf-contact" aria-labelledby="hjbf-contact-title">
+    <div class="hjbf-wrap">
+      <div class="hjbf-sec-head">
+        <div class="hjbf-sec-kicker">CONTACT / 联系与投稿</div>
+        <h2 id="hjbf-contact-title">把你的那一碗饭，发给官方网站</h2>
+        <p>无论是复刻成功、失败经验，还是想参与创作者计划，我们都愿意听。</p>
+      </div>
+
+      <div class="hjbf-contact-wrap">
+        <div class="hjbf-contact-card">
+          <h2>官方联系方式</h2>
+          <p>工作日 10:00 – 19:00 有专人回复，投稿通常在 5 个工作日内给出反馈。</p>
+          <ul class="hjbf-contact-list">
+            <li><b>内容合作：</b>brand@heijiaogfan.example</li>
+            <li><b>用户投稿：</b>story@heijiaogfan.example</li>
+            <li><b>创作者计划：</b>creator@heijiaogfan.example</li>
+            <li><b>商务与授权：</b>license@heijiaogfan.example</li>
+          </ul>
+          <div class="hjbf-contact-actions">
+            <button class="hjbf-btn hjbf-btn-light" id="hjbf-copy-link" type="button">复制页面链接</button>
+            <button class="hjbf-btn hjbf-btn-ghost" id="hjbf-share-open" type="button" style="border-color:rgba(255,220,170,.4);color:#ffdcaa;">分享给同好</button>
+            <button class="hjbf-btn hjbf-btn-ghost" id="hjbf-report-open" type="button" style="border-color:rgba(255,220,170,.4);color:#ffdcaa;">反馈建议</button>
+          </div>
+        </div>
+
+        <div class="hjbf-form-card">
+          <h3>投稿 / 反馈表单</h3>
+          <p>填写后会进行本地校验，提交后我们会通过你留下的方式联系。</p>
+          <form id="hjbf-form" novalidate>
+            <div class="hjbf-field-row">
+              <label for="hjbf-name">你的称呼</label>
+              <input id="hjbf-name" name="name" type="text" placeholder="例如：小满">
+            </div>
+            <div class="hjbf-field-row">
+              <label for="hjbf-contact-way">联系方式（邮箱或社交账号）</label>
+              <input id="hjbf-contact-way" name="contact" type="text" placeholder="例如：you@example.com">
+            </div>
+            <div class="hjbf-field-row">
+              <label for="hjbf-msg">想说的话 / 作品说明</label>
+              <textarea id="hjbf-msg" name="msg" rows="4" placeholder="例如：我按第 9 期做的，酱汁偏稠，想问问是不是火太大……"></textarea>
+            </div>
+            <button class="hjbf-btn hjbf-btn-main" type="submit" style="width:100%;justify-content:center;">提交给官方团队</button>
+            <div class="hjbf-form-tip" id="hjbf-form-tip" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="hjbf-footer">
+  <div class="hjbf-wrap">
+    <div class="hjbf-footer-grid">
+      <div>
+        <h4>黑椒盖饭 官方网站</h4>
+        <p>一个围绕黑椒盖饭的原创视频品牌与内容社区。我们深耕这一垂直领域，把家常复刻做成可执行的完整版方法论，持续运营，保持真实。</p>
+        <p>官方网站 · 官方发布 · 精品内容</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#hjbf-focus">焦点内容</a></li>
+          <li><a href="#hjbf-videos">热门视频流</a></li>
+          <li><a href="#hjbf-topics">专题企划</a></li>
+          <li><a href="#hjbf-authors">创作者矩阵</a></li>
+          <li><a href="#hjbf-about">品牌深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与平台</h4>
+        <ul>
+          <li><a href="#hjbf-news">企业动态</a></li>
+          <li><a href="#hjbf-faq">帮助中心</a></li>
+          <li><a href="#hjbf-contact">投稿入口</a></li>
+          <li><a href="#hjbf-contact">品牌合作</a></li>
+          <li><a href="#hjbf-top">回到顶部</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>版权与使用</h4>
+        <ul>
+          <li>原创内容，正版授权</li>
+          <li>高清素材仅限个人学习</li>
+          <li>商业使用请联系授权</li>
+          <li>用户投稿遵循社区公约</li>
+          <li>反馈与举报通道常开</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hjbf-footer-bottom">
+      <span>© 2026 黑椒盖饭官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容备案号：HJGF-2026-1119 · 用户至上 · 匠心出品</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hjbf-top-btn" id="hjbf-top-btn" type="button" aria-label="回到页面顶部">↑</button>
+
+<div class="hjbf-toast" id="hjbf-toast" role="status" aria-live="polite"></div>
+
+<div class="hjbf-modal" id="hjbf-modal" role="dialog" aria-modal="true" aria-labelledby="hjbf-modal-title">
+  <div class="hjbf-modal-box">
+    <button class="hjbf-modal-close" id="hjbf-modal-close" type="button" aria-label="关闭弹窗">×</button>
+    <h3 id="hjbf-modal-title">提示</h3>
+    <div id="hjbf-modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var prefix = "hjbf-";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById(prefix + "toast");
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl){return;}
+    toastEl.textContent = msg;
+    toastEl.classList.add("hjbf-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove("hjbf-show");
+    }, 2200);
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var burger = document.getElementById(prefix + "burger");
+  var nav = document.getElementById(prefix + "nav");
+  if(burger && nav){
+    burger.addEventListener("click", function(){
+      var open = nav.classList.toggle("hjbf-nav-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.addEventListener("click", function(e){
+      if(e.target.tagName === "A"){
+        nav.classList.remove("hjbf-nav-open");
+        burger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById(prefix + "search-input");
+  var searchBtn = document.getElementById(prefix + "search-btn");
+  var searchTip = document.getElementById(prefix + "search-tip");
+  var searchIndex = [
+    {k:"黑椒汁", d:"三段式配比 / 收稠判断 / 糖与生抽顺序"},
+    {k:"牛肉", d:"逆纹切 / 上浆顺序 / 腌制时间对照"},
+    {k:"火候", d:"家庭灶对照卡 / 锅温与下锅量"},
+    {k:"米饭", d:"含水率测试 / 珍珠米与丝苗米对比"},
+    {k:"腌制", d:"小苏打用量 / 淀粉比例 / 嫩滑原理"},
+    {k:"锅气", d:"分批炒制 / 预热与回温"}
+  ];
+  function doSearch(){
+    if(!searchInput || !searchTip){return;}
+    var q = searchInput.value.trim();
+    if(!q){
+      searchTip.innerHTML = "试试输入 <b>黑椒汁</b>、<b>火候</b> 或 <b>米饭</b>，查看相关内容方向。";
+      searchTip.classList.add("hjbf-show");
+      return;
+    }
+    var hit = null;
+    for(var i=0;i<searchIndex.length;i++){
+      if(q.indexOf(searchIndex[i].k) > -1 || searchIndex[i].k.indexOf(q) > -1){
+        hit = searchIndex[i]; break;
+      }
+    }
+    if(hit){
+      searchTip.innerHTML = "找到与 <b>" + hit.k + "</b> 相关的内容方向：<br>" + hit.d;
+    }else{
+      searchTip.innerHTML = "暂未直接匹配「<b>" + q.replace(/[<>&]/g,"") + "</b>」。<br>可以试试：黑椒汁、牛肉、火候、米饭、腌制。";
+    }
+    searchTip.classList.add("hjbf-show");
+  }
+  if(searchBtn){ searchBtn.addEventListener("click", doSearch); }
+  if(searchInput){
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); doSearch(); }
+    });
+  }
+  document.addEventListener("click", function(e){
+    if(searchTip && !searchTip.contains(e.target) && e.target !== searchInput && e.target !== searchBtn){
+      searchTip.classList.remove("hjbf-show");
+    }
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var filterWrap = document.getElementById(prefix + "filters");
+  var videoGrid = document.getElementById(prefix + "video-grid");
+  if(filterWrap && videoGrid){
+    filterWrap.addEventListener("click", function(e){
+      var btn = e.target.closest("[data-hjbf-filter]");
+      if(!btn){return;}
+      var cat = btn.getAttribute("data-hjbf-filter");
+      filterWrap.querySelectorAll(".hjbf-chip").forEach(function(c){ c.classList.remove("hjbf-chip-on"); });
+      btn.classList.add("hjbf-chip-on");
+      var cards = videoGrid.querySelectorAll(".hjbf-card");
+      var shown = 0;
+      cards.forEach(function(card){
+        var match = (cat === "all") || (card.getAttribute("data-hjbf-cat") === cat);
+        card.style.display = match ? "" : "none";
+        if(match){ shown++; }
+      });
+      showToast("已筛选「" + btn.textContent + "」相关内容，共 " + shown + " 条");
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 / 分享 ---------- */
+  if(videoGrid){
+    videoGrid.addEventListener("click", function(e){
+      var likeBtn = e.target.closest(".hjbf-like");
+      var saveBtn = e.target.closest(".hjbf-save");
+      var shareBtn = e.target.closest(".hjbf-share");
+
+      if(likeBtn){
+        var span = likeBtn.querySelector("span");
+        var liked = likeBtn.classList.toggle("hjbf-liked");
+        var raw = (span.textContent || "0").replace(/[^\d.]/g, "");
+        var num = parseFloat(raw) || 0;
+        if(/(万)/.test(span.textContent)){
+          num = num + (liked ? 0.1 : -0.1);
+          span.textContent = (Math.max(0,num)).toFixed(1).replace(/\.0$/,"") + "万";
+        }else{
+          num = Math.max(0, Math.round(num + (liked ? 1 : -1)));
+          span.textContent = num;
+        }
+        showToast(liked ? "已点赞，感谢你的认可" : "已取消点赞");
+        return;
+      }
+
+      if(saveBtn){
+        var saved = saveBtn.classList.toggle("hjbf-saved");
+        saveBtn.querySelector("span").textContent = saved ? "已收藏" : "收藏";
+        showToast(saved ? "已加入收藏，稍后可在个人列表查看" : "已取消收藏");
+        return;
+      }
+
+      if(shareBtn){
+        var title = shareBtn.getAttribute("data-hjbf-title") || "黑椒盖饭相关内容";
+        openShare(title);
+        return;
+      }
+    });
+  }
+
+  /* ---------- 弹窗基础 ---------- */
+  var modal = document.getElementById(prefix + "modal");
+  var modalTitle = document.getElementById(prefix + "modal-title");
+  var modalBody = document.getElementById(prefix + "modal-body");
+  var modalClose = document.getElementById(prefix + "modal-close");
+
+  function openModal(title, bodyHtml){
+    if(!modal){return;}
+    modalTitle.textContent = title;
+    modalBody.innerHTML = bodyHtml;
+    modal.classList.add("hjbf-show");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    if(!modal){return;}
+    modal.classList.remove("hjbf-show");
+    document.body.style.overflow = "";
+  }
+  if(modalClose){ modalClose.addEventListener("click", closeModal); }
+  if(modal){
+    modal.addEventListener("click", function(e){
+      if(e.target === modal){ closeModal(); }
+    });
+  }
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){ closeModal(); }
+  });
+
+  /* ---------- 分享 ---------- */
+  function openShare(title){
+    var html = ''
+      + '<p>把「' + title + '」分享给同好，一起把那碗饭做得更稳。</p>'
+      + '<div class="hjbf-share-grid">'
+      + '<button class="hjbf-share-item" type="button">微信好友</button>'
+      + '<button class="hjbf-share-item" type="button">朋友圈</button>'
+      + '<button class="hjbf-share-item" type="button">微博</button>'
+      + '<button class="hjbf-share-item" type="button">QQ</button>'
+      + '<button class="hjbf-share-item" type="button">复制链接</button>'
+      + '<button class="hjbf-share-item" type="button">生成卡片</button>'
+      + '</div>'
+      + '<p style="font-size:12.5px;">演示页面中，分享渠道为示意入口；复制链接会写入剪贴板。</p>';
+    openModal("分享内容", html);
+    modalBody.querySelectorAll(".hjbf-share-item").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        if(btn.textContent === "复制链接"){
+          copyLink();
+        }else{
+          showToast("已唤起「" + btn.textContent + "」分享入口（示意）");
+        }
+      });
+    });
+  }
+
+  var shareOpen = document.getElementById(prefix + "share-open");
+  if(shareOpen){
+    shareOpen.addEventListener("click", function(){
+      openShare("黑椒盖饭官方网站 · 完整版复刻指南");
+    });
+  }
+
+  /* ---------- 复制链接 ---------- */
+  function copyLink(){
+    var link = "https://heijiaogfan.example/";
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(link).then(function(){
+        showToast("页面链接已复制，可直接分享");
+        closeModal();
+      }).catch(function(){
+        showToast("复制失败，请手动选中地址栏内容");
+      });
+    }else{
+      var temp = document.createElement("textarea");
+      temp.value = link;
+      document.body.appendChild(temp);
+      temp.select();
+      try{
+        document.execCommand("copy");
+        showToast("页面链接已复制，可直接分享");
+      }catch(err){
+        showToast("复制失败，请手动选中地址栏内容");
+      }
+      document.body.removeChild(temp);
+      closeModal();
+    }
+  }
+  var copyBtn = document.getElementById(prefix + "copy-link");
+  if(copyBtn){ copyBtn.addEventListener("click", copyLink); }
+
+  /* ---------- 反馈弹窗 ---------- */
+  var reportOpen = document.getElementById(prefix + "report-open");
+  if(reportOpen){
+    reportOpen.addEventListener("click", function(){
+      openModal("反馈建议", ''
+        + '<p>我们重视每一条反馈。请说明你遇到的问题或希望新增的内容方向。</p>'
+        + '<div class="hjbf-field-row"><label for="hjbf-report-text">反馈内容</label>'
+        + '<textarea id="hjbf-report-text" rows="4" placeholder="例如：希望增加电磁炉版本的火候参数"></textarea></div>'
+        + '<button class="hjbf-btn hjbf-btn-main" id="hjbf-report-submit" type="button" style="width:100%;justify-content:center;">提交反馈</button>'
+      );
+      var submit = document.getElementById("hjbf-report-submit");
+      var text = document.getElementById("hjbf-report-text");
+      if(submit){
+        submit.addEventListener("click", function(){
+          if(text && text.value.trim().length < 4){
+            showToast("请再多写几个字，方便我们理解");
+            return;
+          }
+          showToast("反馈已记录，感谢你的建议");
+          closeModal();
+        });
+      }
+    });
+  }
+
+  /* ---------- 作者简介弹窗 ---------- */
+  var authorGrid = document.getElementById(prefix + "author-grid");
+  if(authorGrid){
+    authorGrid.addEventListener("click", function(e){
+      var btn = e.target.closest(".hjbf-author-open");
+      if(!btn){return;}
+      var name = btn.getAttribute("data-hjbf-author") || "创作者";
+      var bio = btn.getAttribute("data-hjbf-bio") || "";
+      openModal(name, ''
+        + '<p>' + bio + '</p>'
+        + '<p style="font-size:13px;color:#5a4433;">该创作者为平台签约或合作创作者，内容以黑椒盖饭及相关家常技法为主，作品均经授权发布。</p>'
+        + '<button class="hjbf-btn hjbf-btn-main" id="hjbf-follow-btn" type="button" style="width:100%;justify-content:center;">关注该创作者</button>'
+      );
+      var follow = document.getElementById("hjbf-follow-btn");
+      if(follow){
+        follow.addEventListener("click", function(){
+          follow.textContent = "已关注";
+          follow.style.background = "#c06a12";
+          showToast("已关注 " + name);
+        });
+      }
+    });
+  }
+
+  /* ---------- 表单校验 ---------- */
+  var form = document.getElementById(prefix + "form");
+  var formTip = document.getElementById(prefix + "form-tip");
+  if(form){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = document.getElementById(prefix + "name").value.trim();
+      var contact = document.getElementById(prefix + "contact-way").value.trim();
+      var msg = document.getElementById(prefix + "msg").value.trim();
+      if(!name){
+        formTip.textContent = "请先填写你的称呼。";
+        return;
+      }
+      if(!contact || contact.length < 3){
+        formTip.textContent = "请填写有效的联系方式，便于我们回复。";
+        return;
+      }
+      if(msg.length < 6){
+        formTip.textContent = "内容稍短，再多写几句会更有帮助。";
+        return;
+      }
+      formTip.textContent = "提交成功，官方团队将在 5 个工作日内回复。";
+      form.reset();
+      showToast("投稿已提交，感谢你的认真");
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById(prefix + "top-btn");
+  function onScroll(){
+    if(!topBtn){return;}
+    if(window.scrollY > 520){
+      topBtn.classList.add("hjbf-show");
+    }else{
+      topBtn.classList.remove("hjbf-show");
+    }
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+  if(topBtn){
+    topBtn.addEventListener("click", function(){
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  function animateCount(el){
+    var target = parseInt(el.getAttribute("data-hjbf-count"), 10);
+    if(isNaN(target)){return;}
+    var start = 0, dur = 1200, t0 = null;
+    function step(ts){
+      if(!t0){ t0 = ts; }
+      var p = Math.min((ts - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(start + (target - start) * eased);
+      if(p < 1){ requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll("[data-hjbf-count]");
+  if("IntersectionObserver" in window && counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          animateCount(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.4});
+    counters.forEach(function(c){ io.observe(c); });
+  }
+
+  /* ---------- 锚点滚动偏移（吸顶高度预留） ---------- */
+  document.addEventListener("click", function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a){return;}
+    var id = a.getAttribute("href");
+    if(id === "#" || id.length < 2){return;}
+    var targetEl = document.querySelector(id);
+    if(!targetEl){return;}
+    e.preventDefault();
+    var sticky = document.querySelector(".hjbf-stickybar");
+    var offset = sticky ? sticky.offsetHeight + 12 : 0;
+    var top = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({top: top, behavior:"smooth"});
+  });
+
+})();
+</script>
+</body>
+            </html>
